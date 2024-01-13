@@ -1,0 +1,33 @@
+ /usr/bin/env /usr/local/sdkman/candidates/java/21.0.1-ms/bin/java --enable-preview -XX:+ShowCodeDetailsInExceptionMessages -cp /home/codespace/.vscode-remote/data/User/workspaceStorage/28c45f6a-2/redhat.java/jdt_ws/codespaces-blank_ba63f403/bin CSCD210.Lab1.cscd210lab1.CSCD210Lab1 
+@Querido-o ➜ /workspaces/codespaces-blank $  /usr/bin/env /usr/local/sdkman/candidate
+s/java/21.0.1-ms/bin/java --enable-preview -XX:+ShowCodeDetailsInExceptionMessages -c
+p /home/codespace/.vscode-remote/data/User/workspaceStorage/28c45f6a-2/redhat.java/jd
+t_ws/codespaces-blank_ba63f403/bin CSCD210.Lab1.cscd210lab1.CSCD210Lab1 
+Please enter your shoe size (no half sizes)8
+Please enter your birth year (yyyy)2002
+Your shoe size is the numbers before the comma and your age (presuming you've had your bday for 2019) is the numbers after the comma 08,17
+@Querido-o ➜ /workspaces/codespaces-blank $  cd /workspaces/codespaces-blank ; /usr/b
+in/env /usr/local/sdkman/candidates/java/21.0.1-ms/bin/java --enable-preview -XX:+Sho
+wCodeDetailsInExceptionMessages -cp /home/codespace/.vscode-remote/data/User/workspac
+eStorage/28c45f6a-2/redhat.java/jdt_ws/codespaces-blank_ba63f403/bin CSCD210.Lab1.csc
+d210lab1.CSCD210Lab1 
+Please enter your shoe size (no half sizes)5
+Please enter your birth year (yyyy)1234
+Your shoe size is the numbers before the comma and your age (presuming you've had your bday for 2019) is the numbers after the comma 12,85
+@Querido-o ➜ /workspaces/codespaces-blank $ 9
+cd: no such entry in dir stack
+@Querido-o ➜ /workspaces/codespaces-blank $ -1235
+zsh: command not found: -1235
+@Querido-o ➜ /workspaces/codespaces-blank $  cd /workspaces/codespaces-blank ; /usr/b
+in/env /usr/local/sdkman/candidates/java/21.0.1-ms/bin/java --enable-preview -XX:+Sho
+wCodeDetailsInExceptionMessages -cp /home/codespace/.vscode-remote/data/User/workspac
+eStorage/28c45f6a-2/redhat.java/jdt_ws/codespaces-blank_ba63f403/bin CSCD210.Lab1.csc
+d210lab1.CSCD210Lab1 
+Please enter your shoe size (no half sizes)12.5
+Exception in thread "main" java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:947)
+        at java.base/java.util.Scanner.next(Scanner.java:1602)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2267)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2221)
+        at CSCD210.Lab1.cscd210lab1.CSCD210Lab1.main(CSCD210Lab1.java:12)
+@Querido-o ➜ /workspaces/codespaces-blank $ 
