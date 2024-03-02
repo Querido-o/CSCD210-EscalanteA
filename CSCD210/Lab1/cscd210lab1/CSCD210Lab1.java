@@ -1,4 +1,4 @@
-package CSCD210.Lab1.cscd210lab1;
+package CSCD210.Lab2.cscd210lab2;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 public class CSCD210Lab1 {

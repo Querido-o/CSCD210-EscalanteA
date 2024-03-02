@@ -1,0 +1,64 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class CSCSD210Lab4 {
+
+    // Set base fees
+    private static final double RES_BASE = 25.00;
+    private static final double BUS_BASE = 1500.00;
+
+    public static void main(String[] args) {
+
+        Scanner user_input = new Scanner(System.in);
+
+        // Prompt user for meter readings
+        System.out.print("Enter the beginning meter reading: ");
+        int meter_start = scanner.nextInt();
+
+        System.out.print("Enter the ending meter reading: ");
+        int meter_end = scanner.nextInt();
+        
+        // Prompt user for customer code
+        System.out.print("Enter customer code (r for residential, b for business): ");
+        char customerCode = scanner.next().charAt(0);
+
+        // Calculate gallons used
+        double gallonsUsed = calculateGallons(beginReading, endReading);
+
+        // Calculate and display the amount billed
+        double amountBilled = calculateAmountBilled(customerCode, gallonsUsed);
+        displaySummary(customerCode, beginReading, endReading, gallonsUsed, amountBilled);
+
+        // Close scanner
+        scanner.close();
+    }
+
+    // Method to calculate gallons used
+    private static double calculateGallons(int beginReading, int endReading) {
+        int gallons = (endReading - beginReading) % 1000000000; // Consider only the last nine digits
+        return gallons / 10.0; // Convert tenths to gallons
+    }
+
+    // Method to calculate amount billed
+    private static double calculateAmountBilled(char customerCode, double gallonsUsed) {
+        double baseFee = (customerCode == 'r') ? RES_BASE : BUS_BASE;
+
+        if (customerCode == 'b' && gallonsUsed > 999.9) {
+            return baseFee + 0.00002 * 999.9 + 0.00001 * (gallonsUsed - 999.9);
+        } else {
+            return baseFee + 0.0003 * gallonsUsed;
+        }
+    }
+
+    // Method to display customer summary
+    private static void displaySummary(char customerCode, int beginReading, int endReading,
+                                       double gallonsUsed, double amountBilled) {
+        DecimalFormat df = new DecimalFormat("$0.00");
+        System.out.println("\nCustomer Summary:");
+        System.out.println("Customer Code: " + customerCode);
+        System.out.println("Beginning Meter Reading: " + beginReading);
+        System.out.println("Ending Meter Reading: " + endReading);
+        System.out.println("Gallons Used: " + gallonsUsed);
+        System.out.println("Amount Billed: " + df.format(amountBilled));
+    }
+}
